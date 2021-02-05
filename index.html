@@ -28,35 +28,37 @@
   <body class="body">
     <!-- Top container = nav + intro box -->
     <div class="home-top-container">
-      <nav class="navbar reset-anchor">
-        <a href="/">
-          <div class="navbar__logo typography-logo-style">
-            <i class="fas fa-camera-retro"></i> Benfr
-          </div>
-        </a>
-        <ul class="navbar__list">
-          <li class="navbar__item">
-            <a class="navbar__link" href="all-products.html"
-              ><i class="fas fa-search"></i
-            ></a>
-          </li>
-          <li class="navbar__item">
-            <a class="navbar__link" href="login.html"
-              ><i class="far fa-user"></i
-            ></a>
-          </li>
-          <li class="navbar__item">
-            <a class="navbar__link" href="wishlist.html"
-              ><i class="far fa-heart"></i
-            ></a>
-          </li>
-          <li class="navbar__item">
-            <a class="navbar__link" href="cart.html"
-              ><i class="fas fa-shopping-basket"></i
-            ></a>
-          </li>
-        </ul>
-      </nav>
+      <div class="navbar-outer">
+        <nav class="navbar reset-anchor">
+          <a href="/">
+            <div class="navbar__logo typography-logo-style">
+              <i class="fas fa-camera-retro"></i> Benfr
+            </div>
+          </a>
+          <ul class="navbar__list">
+            <li class="navbar__item">
+              <a class="navbar__link" href="all-products.html"
+                ><i class="fas fa-search"></i
+              ></a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="login.html"
+                ><i class="far fa-user"></i
+              ></a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="wishlist.html"
+                ><i class="far fa-heart"></i
+              ></a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="cart.html"
+                ><i class="fas fa-shopping-basket"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
 
       <div class="home-intro-box js--components-function--sliders">
         <button
@@ -549,11 +551,17 @@
                 href="mailto:arhantjain2@gmail.com"
                 class="footer__contact-each"
               >
-                <i class="fas fa-envelope"></i> arhantjain2@gmail.com
+                <span class="footer__contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </span>
+                arhantjain2@gmail.com
               </a>
-              <a href="tel:+919999999999" class="footer__contact-each"
-                >+91 9999 999 999</a
-              >
+              <a href="tel:+919999999999" class="footer__contact-each">
+                <span class="footer__contact-icon">
+                  <i class="fas fa-phone-alt"></i>
+                </span>
+                +91 9999 999 999
+              </a>
             </address>
           </div>
           <div class="footer__box">
@@ -585,7 +593,7 @@
 
         <div class="footer__copyright-container">
           <div class="footer__copyright">
-            Copyright &copy; 2020 Benfr | All Rights Reserved
+            Copyright &copy; 2021 Benfr | All Rights Reserved
           </div>
           <a href="https://www.linkedin.com/" class="footer__made-by">
             Made with
