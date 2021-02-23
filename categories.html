@@ -45,7 +45,7 @@
         </a>
         <ul class="navbar__list">
           <li class="navbar__item">
-            <a class="navbar__link" href="./all-products.html"
+            <a class="navbar__link" href="./all-products-categories.html"
               ><i class="fas fa-search"></i
             ></a>
           </li>
@@ -178,132 +178,150 @@
         </a>
       </aside>
     </div>
-
-    <div class="card account">
-      <aside class="account__sidebar">
-        <h2 class="heading-quadinary heading-quadinary--2">Account</h2>
-        <ul class="account__sidebar-list">
-          <li class="account__sidebar-item">
-            <a href="./account.html" class="btn btn--text btn--text-inital-dark"
-              >My Account</a
+    <!-- Reviews -->
+    <div class="card types">
+      <div class="card__top">
+        <h2 class="heading-tertiary card__heading">Categories</h2>
+        <div class="card__top-content">
+          <div class="menu-dropdown js--components-function--dropdown">
+            <button
+              class="menu-dropdown__btn js--components-function--dropdown__btn"
             >
-          </li>
-          <li class="account__sidebar-item">
-            <a
-              href="./edit-account.html"
-              class="btn btn--text btn--text-inital-dark"
-              >Edit Account</a
+              Sort By <i class="fas fa-chevron-down"></i>
+            </button>
+            <ul
+              class="menu-dropdown__list js--components-function--dropdown__list"
+              data-toggle-class="menu-dropdown__list--show"
             >
-          </li>
-          <li class="account__sidebar-item">
-            <a
-              href="./login-information.html"
-              class="btn btn--text btn--text-inital-dark"
-              >Login Information</a
-            >
-          </li>
-          <li class="account__sidebar-item">
-            <a
-              href="./change-password.html"
-              class="btn btn--text btn--text-inital-dark"
-              >Password</a
-            >
-          </li>
-          <li class="account__sidebar-item">
-            <a
-              href="./address-book.html"
-              class="btn btn--text btn--text-inital-dark"
-              >Address Book</a
-            >
-          </li>
-          <li class="account__sidebar-item">
-            <a
-              href="./wishlist.html"
-              class="btn btn--text btn--text-inital-dark"
-              >Wishlist</a
-            >
-          </li>
-          <li class="account__sidebar-item">
-            <a
-              href="./my-orders.html"
-              class="btn btn--text btn--text-inital-dark"
-              >Order history</a
-            >
-          </li>
-          <li class="account__sidebar-item">
-            <a href="#" class="btn btn--text btn--text-inital-dark">Logout</a>
-          </li>
-        </ul>
-      </aside>
-      <div class="account__main">
-        <div class="account__box">
-          <div class="account__box-top">
-            <h2 class="heading-quadinary heading-quadinary--2">Address Book</h2>
-            <ul class="account__path-list">
-              <li class="account__path-item">
-                <a
-                  href="./index.html"
-                  class="btn btn--text btn--text-inital-dark"
-                  ><i class="fas fa-home"></i
-                ></a>
+              <li class="menu-dropdown__item">
+                <a href="#" class="menu-dropdown__link"> Name [A-Z] </a>
               </li>
-              <li class="account__path-item">
-                <a
-                  href="./account.html"
-                  class="btn btn--text btn--text-inital-dark"
-                  >Account</a
-                >
+              <li class="menu-dropdown__item">
+                <a href="#" class="menu-dropdown__link"> Name [Z-A] </a>
               </li>
-              <li class="account__path-item">
+              <li class="menu-dropdown__item">
+                <a href="#" class="menu-dropdown__link">
+                  Created (Oldest First)
+                </a>
+              </li>
+              <li class="menu-dropdown__item">
                 <a
-                  href="./address-book.html"
-                  class="btn btn--text btn--text-inital-dark"
-                  >Address Book</a
+                  href="#"
+                  class="menu-dropdown__link menu-dropdown__link--active"
                 >
+                  Created (Newest First)
+                </a>
+              </li>
+              <li class="menu-dropdown__item">
+                <a href="#" class="menu-dropdown__link">
+                  Updated (Oldest First)
+                </a>
+              </li>
+              <li class="menu-dropdown__item">
+                <a href="#" class="menu-dropdown__link">
+                  Updated (Newest First)
+                </a>
+              </li>
+              <li class="menu-dropdown__item">
+                <a href="#" class="menu-dropdown__link">
+                  Amount (Lowest First)
+                </a>
+              </li>
+              <li class="menu-dropdown__item">
+                <a href="#" class="menu-dropdown__link">
+                  Amount (Highest First)
+                </a>
               </li>
             </ul>
           </div>
 
-          <div class="account__box-main">
-            <div class="inner-card address__box">
-              <div class="address__address">
-                <p class="address__each-line para-primary">Arhant Jain</p>
-                <p class="address__each-line para-primary">123 Main Street,</p>
-                <p class="address__each-line para-primary">New York</p>
-                <p class="address__each-line para-primary">NY 10030</p>
-                <p class="address__each-line para-primary">
-                  <i class="fas fa-phone-alt"></i> +91 9999 999 999
-                </p>
-              </div>
-              <div class="address__btns">
-                <button class="btn btn--round btn--main-color">Edit</button>
-                <button class="btn btn--round btn--red">Remove</button>
-              </div>
-            </div>
-
-            <div class="inner-card address__box">
-              <div class="address__address">
-                <p class="address__each-line para-primary">Arhant Jain</p>
-                <p class="address__each-line para-primary">123 Main Street,</p>
-                <p class="address__each-line para-primary">New York</p>
-                <p class="address__each-line para-primary">NY 10030</p>
-                <p class="address__each-line para-primary">
-                  <i class="fas fa-phone-alt"></i> +91 9999 999 999
-                </p>
-              </div>
-              <div class="address__btns">
-                <button class="btn btn--round btn--main-color">Edit</button>
-                <button class="btn btn--round btn--red">Remove</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="address__box address__box--last-btns-right">
-            <a href="./new-address.html" class="btn btn--round btn--main-color"
-              >New Address</a
+          <div class="menu-btn-collection">
+            <a href="#" class="menu-btn-collection__item">&lt;</a>
+            <div
+              class="menu-btn-collection__item menu-btn-collection__item--active"
             >
+              Page 1
+            </div>
+            <button class="menu-btn-collection__item">&gt;</button>
           </div>
         </div>
+      </div>
+
+      <div class="card__body types__body">
+        <a href="products-categories.html" class="reset-anchor types__card">
+          <div class="types__img-outer">
+            <div class="types__img-box">
+              <img src="./img/category1.png" alt="" class="types__img" />
+            </div>
+          </div>
+          <div class="types__card-body">Speakers</div>
+        </a>
+
+        <a href="products-categories.html" class="reset-anchor types__card">
+          <div class="types__img-outer">
+            <div class="types__img-box">
+              <img src="./img/category2.png" alt="" class="types__img" />
+            </div>
+          </div>
+          <div class="types__card-body">Smart Watches</div>
+        </a>
+
+        <a href="products-categories.html" class="reset-anchor types__card">
+          <div class="types__img-outer">
+            <div class="types__img-box">
+              <img src="./img/category3.png" alt="" class="types__img" />
+            </div>
+          </div>
+          <div class="types__card-body">Cameras</div>
+        </a>
+
+        <a href="products-categories.html" class="reset-anchor types__card">
+          <div class="types__img-outer">
+            <div class="types__img-box">
+              <img
+                src="./img/product-new-arrival-2.jpg"
+                alt=""
+                class="types__img"
+              />
+            </div>
+          </div>
+          <div class="types__card-body">Survilleance</div>
+        </a>
+
+        <a href="products-categories.html" class="reset-anchor types__card">
+          <div class="types__img-outer">
+            <div class="types__img-box">
+              <img
+                src="./img/product-new-arrival-6.jpg"
+                alt=""
+                class="types__img"
+              />
+            </div>
+          </div>
+          <div class="types__card-body">Smart Phones</div>
+        </a>
+
+        <a href="products-categories.html" class="reset-anchor types__card">
+          <div class="types__img-outer">
+            <div class="types__img-box">
+              <img
+                src="./img/product-new-arrival-8.jpg"
+                alt=""
+                class="types__img"
+              />
+            </div>
+          </div>
+          <div class="types__card-body">Laptops</div>
+        </a>
+
+        <a href="products-categories.html" class="reset-anchor types__card">
+          <div class="types__img-outer">
+            <div class="types__img-box">
+              <img src="./img/no-image.png" alt="" class="types__img" />
+            </div>
+          </div>
+          <div class="types__card-body">Some Category</div>
+        </a>
       </div>
     </div>
 
